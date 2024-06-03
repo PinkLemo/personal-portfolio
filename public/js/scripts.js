@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display GitHub repositories
-    fetch('https://api.github.com/users/YOUR_GITHUB_USERNAME/repos')
+    fetch('https://api.github.com/users/PinkLemo/repos')
         .then(response => response.json())
         .then(repos => {
             const gallery = document.getElementById('project-gallery');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const senderEmail = document.getElementById('email').value;
         // Add the sender's email and target email to the form data
         formData.append('email', senderEmail);
-        formData.append('targetEmail', 'mitidaliso1@gmail.com');
+        formData.append('targetEmail', 'tashmiti1@gmail.com');
         
         // Send form data to the server
         fetch('/submit-form', {

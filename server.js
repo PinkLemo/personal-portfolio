@@ -15,8 +15,8 @@ app.use(express.static('public'));
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'mitidaliso1@gmail.com',  // Your Gmail email address
-        pass: 'Dizzylitiou$#16'  // Your Gmail password or app-specific password
+        user: 'tashmiti1@gmail.com',  // Your Gmail email address
+        pass: 'hibm kiux alrz ewvj'  // Your Gmail password or app-specific password
     }
 });
 
@@ -27,7 +27,7 @@ app.post('/submit-form', (req, res) => {
     // Send email using nodemailer
     const mailOptions = {
         from: email,  // sender's email address
-        to: 'mitidaliso1@gmail.com',  // your email address
+        to: 'tashmiti1@gmail.com',  // your email address
         subject: 'New Message from your Portfolio Contact Form',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
